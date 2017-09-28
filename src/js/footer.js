@@ -63,7 +63,7 @@ $('a[href*="#"]')
   });
   $('.bottom-slider').slick({
     asNavFor: '.top-slider',
-    arrows: true,
+    arrows: false,
     dots: true,
     // autoplay: true,
     // rtl: true
