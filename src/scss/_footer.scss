@@ -1,0 +1,46 @@
+.menu-inline{
+    li {
+      text-transform: uppercase;
+
+      a {
+        color: $black;
+        font-size: .8rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+.social-wrap {
+  float: right;
+
+  .footer-text {
+    display: inline-block;
+    position: relative;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+.social-list {
+  list-style-type: none;
+  display: inline-block;
+  li {
+    display: inline-block;
+    position: relative;
+    img {
+      width: 30px;
+      vertical-align: middle;
+      margin: 0 15px 0 0;
+    }
+  }
+}
+}
+
+
+.site-footer {
+  .grid-middle {
+    [class*=col-] {
+      padding:0;
+    }
+  }
+}

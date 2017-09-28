@@ -1,0 +1,129 @@
+.slider-wrapper {
+  position: relative;
+  display: block;
+  height: 100%;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  margin-bottom: 30px;
+
+  .top-slider {
+    height: calc(60vh - 80px);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+    .slide {
+      display: inline-block;
+      position: relative;
+      outline: none;
+      height: calc(60vh - 80px);
+
+      .hero-img {
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        height: calc(60vh - 80px);
+      }
+    }
+  }
+
+  .bottom-slider {
+    text-align: left;
+    height: 40vh;
+    top: calc(60vh - 80px);
+    z-index: 30;
+    position: relative;
+    background: $primary-col;
+
+    .slide {
+      display: inline-block;
+      position: relative;
+      outline: none;
+      height: 40vh;
+
+      .inner-container {
+        .grid-middle{
+          height: 40vh;
+        }
+      }
+
+    }
+  }
+}
+
+.slider-icon {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-img {
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .inner-container {
+    .grid-middle{
+      height: 55vh;
+    }
+  }
+}
+
+.slide-cta {
+  color: $white;
+  @extend .brand-font-bold;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.slide-subtext {
+  color: $white;
+  @extend .brand-font-italic;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.left-arrow-cont {
+    position: absolute;
+    left: 10vw;
+    top: 70vh;
+    z-index: 100;
+    .left-arrow {
+        cursor: pointer;
+    }
+
+    .arrow {
+        width: 60px;
+
+    }
+}
+
+.right-arrow-cont {
+    position: absolute;
+    right: 10vw;
+    top: 70vh;
+    z-index: 100;
+    .arrow {
+        width: 60px;
+    }
+
+    .right-arrow {
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+}
+
+.colr-slide-intro {
+  font-size: .9rem;
+  @extend .brand-font-bold;
+}
+
+.colr-slide-text {
+  font-size: .9rem;
+}
