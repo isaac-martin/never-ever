@@ -9,10 +9,17 @@
     }
   });
 
-  var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 1000}});
-  new ScrollMagic.Scene({triggerElement: ".trigger", duration: 180})
-     .setTween(".build-wrap", {left:0},{opacity:0})
+  var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 300}});
+
+    var tweenbuilding = TweenMax.to(".build-wrap", 1, {className: "+=move-build"});
+    new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 500, duration: 200})
+     .setTween(tweenbuilding)
      .addTo(controller);
+
+     var tweenrocket = TweenMax.to(".rocket-wrap", 1, {className: "+=move-rocket"});
+       new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 500, duration: 200})
+      .setTween(tweenrocket)
+      .addTo(controller);
 
 
 

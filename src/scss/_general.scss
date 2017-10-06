@@ -231,7 +231,46 @@ label {
 }
 
 .build-wrap {
-  left: -20px;
-  position: absolute;
-  // opacity: 0;
+  left: -80px;
+  position: relative;
+  bottom: - 30px;
+  opacity: 0;
+}
+
+.move {
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+
+.build-wrap {
+  left: -120px;
+  position: relative;
+  bottom: - 30px;
+  opacity: 0;
+}
+
+.move-build {
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+
+.rocket-wrap {
+  right: -120px;
+  position: relative;
+  bottom: - 30px;
+  opacity: 0;
+}
+
+.move-rocket {
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.our-story {
+  padding-bottom: 100px;
 }

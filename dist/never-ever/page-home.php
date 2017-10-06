@@ -61,10 +61,10 @@
       </section>
       </main>
       <main id="our-story" class="site-main">
-        <div class="inner-container">
+        <div class="inner-container our-story">
           <div class="grid">
           <div class="col-12">
-            <h2>Our Story</h2>
+            <h2 class="center">Our Story</h2>
           </div>
               <div class="col-6"><div class="text-light"><?php the_field('our_story_left');?></div></div>
               <div class="col-6"><div class="text-light"><?php the_field('our_story_right');?></div></div>
@@ -141,10 +141,14 @@
   <main id="news" class="site-main">
     <div class="inner-container full-height">
       <div class="grid-bottom full-height">
-        <div class="col">
+        <div class="col-12">
           <h2 class="center">News</h2>
-<?php echo do_shortcode('[custom-twitter-feeds]');?>
-</div>
+        </div>
+        <div class="col-6">
+<a class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/NeverEverLtd?ref_src=twsrc%5Etfw">Tweets by NeverEverLtd</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>        </div>
+        <div class="col-6">
+
+        </div>
 </div>
 </div
   </main>
