@@ -2,7 +2,13 @@
 
 html {
   font-size: 18px;
+
+  @include media-below($break-small) {
+    font-size: 14px;
+  }
 }
+
+
 body {
   background: color(body-background);
   color: color(text);
@@ -66,14 +72,23 @@ img {
 
 .building-icon {
   height: 120px; width: auto;
+  margin: 0 auto;
+display: block;
 }
 
 .rocket-icon {
   height: 140px; width: auto;
+  margin: 0 auto;
+display: block;
 }
 
 .zipper {
   vertical-align: bottom;
+  @include media-below($break-small) {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
 }
 
 .how-icon {
@@ -153,16 +168,20 @@ label {
 
 .location-list {
     list-style-type: none;
-    text-align: center;
-    padding-bottom: 60px;
+    text-align: left;
+    padding: 0;
+    @include media-below($break-small) {
+      padding:0 0 0 20px;
+    }
     .single-location {
-      display: inline-block;
+      display: block;
+      margin: 0 0 20px 0;
       position: relative;
       list-style-type: none;
       color: $white;
-      padding: 0 40px 0 0;
+      padding: 0;
       @extend .brand-font-bold;
-      font-size: 1.2rem;
+      font-size: 4rem;
     }
 }
 
@@ -237,18 +256,16 @@ label {
   opacity: 0;
 }
 
-.move {
-  left: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-
 .build-wrap {
   left: -120px;
   position: relative;
   bottom: - 30px;
   opacity: 0;
+  @include media-below($break-small) {
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 .move-build {
@@ -263,6 +280,12 @@ label {
   position: relative;
   bottom: - 30px;
   opacity: 0;
+
+  @include media-below($break-small) {
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 .move-rocket {
@@ -271,6 +294,33 @@ label {
   opacity: 1;
 }
 
+.zipper-wrap {
+  position: relative;
+  bottom: -100px;
+  opacity: 0;
+
+  @include media-below($break-small) {
+    bottom: 0;
+    opacity: 1;
+  }
+
+}
+
+.move-zip {
+  bottom: 0;
+  opacity: 1;
+}
+
 .our-story {
   padding-bottom: 100px;
+}
+
+.icon-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.icon-text{
+  font-size: 12px;
+    text-align: center;
 }

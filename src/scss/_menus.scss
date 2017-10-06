@@ -2,6 +2,7 @@
 
 // Inline menu; used in header and footer navigation
 .menu-inline {
+  background: white;
   @extend %clearfix;
   &, ul {
     list-style-type: none;

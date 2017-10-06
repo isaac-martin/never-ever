@@ -27,4 +27,14 @@
       button.className += ' active';
     }
   };
+
+  menu.onclick = function() {
+    if (button.className.indexOf( 'active' ) !== -1) {
+      nav.style.display = 'none';
+      button.className = button.className.replace(' active', '');
+    } else {
+      nav.style.display = 'block';
+      button.className += ' active';
+    }
+  };
 } )();

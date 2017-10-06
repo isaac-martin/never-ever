@@ -21,6 +21,11 @@
 .inner-container {
   max-width: 800px;
   margin: 0 auto;
+
+  @include media-below($break-small) {
+    padding:0 20px;
+  }
+
 }
 .container { // Wrapper around content and sidebar
   @extend %clearfix;
@@ -36,9 +41,13 @@
     width: 100%;
   }
 
+  @include media-below($break-small) {
+    padding-top: 0;
+  }
   min-height: calc(100vh - 90px;)
 }
 .wrap-footer {
+  overflow: hidden;
   @extend %wrap;
   background: color(footer-background);
   // padding-bottom: spacer(1/2);
@@ -82,6 +91,10 @@
 
 .grey-bg {
   background-color: $grey;
+}
+
+.yellow-bg {
+  background-color: $primary-col;
 }
 
 .full-height {

@@ -13,6 +13,11 @@
 .social-wrap {
   float: right;
 
+  @include media-below($break-small) {
+    float: left;
+    padding: 0 0 0 20px;
+  }
+
   .footer-text {
     display: inline-block;
     position: relative;
@@ -42,5 +47,13 @@
     [class*=col-] {
       padding:0;
     }
+  }
+}
+
+
+#menu-footer {
+  @include media-below($break-small) {
+    display: none;
+    visibility: hidden;
   }
 }

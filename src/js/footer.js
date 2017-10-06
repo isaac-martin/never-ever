@@ -12,16 +12,30 @@
   var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 300}});
 
     var tweenbuilding = TweenMax.to(".build-wrap", 1, {className: "+=move-build"});
-    new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 500, duration: 200})
+    new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 700, duration: 200})
      .setTween(tweenbuilding)
      .addTo(controller);
 
      var tweenrocket = TweenMax.to(".rocket-wrap", 1, {className: "+=move-rocket"});
-       new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 500, duration: 200})
+       new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 700, duration: 200})
       .setTween(tweenrocket)
       .addTo(controller);
 
+      var tweenzip = TweenMax.to(".zipper-wrap", 1, {className: "+=move-zip"});
+        new ScrollMagic.Scene({triggerElement: "#what-we-do", triggerHook: 'onEnter', offset: 700, duration: 200})
+       .setTween(tweenzip)
+       .addTo(controller);
 
+       $(window).on('resize', function(){
+         if ($('html').width() < 769) {
+           if (controller.enabled()) {
+             controller.enabled(false);
+           }
+         } else if (!controller.enabled()) {
+           controller.enabled(true);
+         }
+         controller.update(true);
+       });
 
 
   // Select all links with hashes
@@ -62,18 +76,8 @@ $('a[href*="#"]')
   });
 
   $('.top-slider').slick({
-
-    asNavFor: '.bottom-slider',
-    arrows: false,
-    rtl: true
-    // autoplay: true
-  });
-  $('.bottom-slider').slick({
-    asNavFor: '.top-slider',
     arrows: false,
     dots: true,
-    // autoplay: true,
-    // rtl: true
   });
 
   $('.left-arrow').click(function(){
@@ -83,5 +87,6 @@ $('a[href*="#"]')
   $('.right-arrow').click(function(){
        $(".slick-slider").slick('slickNext');
   });
+
 
   })(jQuery, this);
