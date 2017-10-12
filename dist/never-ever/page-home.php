@@ -10,7 +10,7 @@
         <div class="right-arrow-cont">
           <img src="<?php bloginfo('template_directory'); ?>/imgs/icons/arrow.svg" class="arrow right-arrow">
         </div>
-        <section class="top-slider" dir="rtl">
+        <section class="top-slider">
           <?php if( have_rows('slider_content') ):
           while( have_rows('slider_content') ): the_row();
           $img = get_sub_field('slide_hero');
@@ -22,36 +22,10 @@
               <div class="inner-container">
                 <div class="grid-middle">
                   <div class="col">
-                    <h2 class="slide-cta">&lrm;"<?php echo $cta ?>"&lrm;</h2>
+                    <h2 class="slide-cta">&lrm;<?php echo $cta ?>&lrm;</h2>
                     <p class="slide-subtext"><?php echo $subtext ?>&lrm;</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        <?php endwhile; ?>
-      <?php endif; ?>
-
-
-        </section>
-        <section class="bottom-slider" >
-          <?php if( have_rows('slider_content') ):
-          while( have_rows('slider_content') ): the_row();
-          $icon = get_sub_field('icon');
-          $iconintro = get_sub_field('icon_title');
-          $icontext = get_sub_field('icon_text');
-          ?>
-          <div class="slide bg-col-slide">
-            <div class="inner-container">
-              <div class="grid-middle">
-                <div class="col-2">
-                  <img src="<?php echo $icon ?>" class="slider-icon">
-                </div>
-                <div class="col-10">
-                  <h3 class="colr-slide-intro"><?php echo $iconintro ?></h3>
-                  <p class="colr-slide-text"><?php echo $icontext ?></p>
-                </div>
-
               </div>
             </div>
           </div>
@@ -66,34 +40,48 @@
           <div class="col-12">
             <h2 class="center">Our Story</h2>
           </div>
-              <div class="col-6"><div class="text-light"><?php the_field('our_story_left');?></div></div>
-              <div class="col-6"><div class="text-light"><?php the_field('our_story_right');?></div></div>
+              <div class="col-6_sm-12"><div class="text-light"><?php the_field('our_story_left');?></div></div>
+              <div class="col-6_sm-12"><div class="text-light"><?php the_field('our_story_right');?></div></div>
           </div>
         </div>
       </main>
-      <main id="what-we-do" class="site-main grey-bg trigger">
+      <main id="what-we-do" class="site-main yellow-bg trigger full-height">
         <div class="inner-container">
           <div class="grid-middle">
             <div class="col-12">
               <h2 class="center">What We Do</h2>
               <p class="tagline center"><?php the_field('what_we_do_tagline');?></p>
             </div>
-            <div class="col-2" data-push-left="off-1">
+            <div class="col-4_sm-12">
               <div class="build-wrap">
                 <img src="<?php bloginfo('template_directory'); ?>/imgs/icons/building.svg" class="building-icon" />
+                <h3 class="icon-title">
+                  <?php the_field('building_title'); ?>
+                </h3>
                 <p class="icon-text">
-                  Institutions
+                    <?php the_field('building_sub'); ?>
                 </p>
               </div>
             </div>
-            <div class="col-4 pad-btm-0" data-push-left="off-1">
-                <img src="<?php bloginfo('template_directory'); ?>/imgs/icons/zip-down.svg" class="zipper" />
+            <div class="col-4_sm-12 pad-btm-0 zipper">
+                <img src="<?php bloginfo('template_directory'); ?>/imgs/icons/zipper.svg" class="zipper" />
+                <div class="zipper-wrap">
+                  <h3 class="icon-title">
+                    <?php the_field('zipper_title'); ?>
+                  </h3>
+                  <p class="icon-text">
+                      <?php the_field('zipper_sub'); ?>
+                  </p>
+                </div>
             </div>
-            <div class="col-2" data-push-left="off-1">
+            <div class="col-4_sm-12">
               <div class="rocket-wrap">
                 <img src="<?php bloginfo('template_directory'); ?>/imgs/icons/rocket.svg" class="rocket-icon" />
+                <h3 class="icon-title">
+                  <?php the_field('rocket_title'); ?>
+                </h3>
                 <p class="icon-text">
-                  Fintech's
+                    <?php the_field('rocket_sub'); ?>
                 </p>
               </div>
             </div>
@@ -109,8 +97,7 @@
           $icon = get_sub_field('icon');
           $content = get_sub_field('text');
           ?>
-          <div class="col-4">
-
+          <div class="col-4_sm-12">
             <img class="how-icon" src="<?php echo $icon ?>">
             <p class="icon-descript center">
               <?php echo $content ?>
@@ -121,9 +108,9 @@
       </div>
     </div>
     </main>
-    <main id="locations" class="site-main full-height bg-img" style="background-image:url(<?php the_field('location_img');?>);">
+    <main id="locations" class="site-main full-height yellow-bg" style="background-image:url(<?php the_field('location_img');?>);">
       <div class="inner-container full-height">
-        <div class="grid-bottom full-height">
+        <div class="grid-middle full-height">
           <div class="col">
             <ul class="location-list">
               <?php if( have_rows('locations') ):
@@ -139,18 +126,16 @@
       </div>
   </main>
   <main id="news" class="site-main">
-    <div class="inner-container full-height">
-      <div class="grid-bottom full-height">
+    <div class="inner-container">
+      <div class="grid-bottom">
         <div class="col-12">
-          <h2 class="center">News</h2>
+          <h2 class="center" style="margin-bottom: 0;">News</h2>
         </div>
-        <div class="col-6">
-<a class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/NeverEverLtd?ref_src=twsrc%5Etfw">Tweets by NeverEverLtd</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>        </div>
-        <div class="col-6">
-
+        <div class="col-12">
+          <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
         </div>
 </div>
-</div
+</div>
   </main>
   <main id="contact" class="site-main contact-wrap">
     <div class="inner-container">
@@ -158,13 +143,14 @@
         <div class="col-12">
           <div class="spacer-line"></div>
           <h2 class="center">Your turn to make history</h2>
+          <p class="icon-descript center">Look beyond your limits, get in contact</p>
         </div>
 
-        <div class="col-6 form-cont" data-push-left="off-3">
+        <div class="col-6_sm-12 form-cont" data-push-left="off-3_sm-0">
           <form action="https://service.capsulecrm.com/service/newlead" method="post" class="contact-form">
-            <input type="hidden" name="FORM_ID" value="b4ba4d73-266c-4aba-acd8-eef442773654">
+            <input type="hidden" name="FORM_ID" value="4b8af561-85cc-4cfe-bd4c-20c1d7345b77">
             <input type="hidden" name="COMPLETE_URL" value="<?php echo get_bloginfo('url') ?>/thanks">
-            <input type="hidden" name="DEVELOPER" value="true">
+            <input type="hidden" name="TAG" value="BlackboxInc Lead">
             <input type="text" name="FIRST_NAME" placeholder="Your First Name">
             <input type="text" name="LAST_NAME" placeholder="Your Last Name">
             <input type="text" name="ORGANISATION_NAME" placeholder="Your Company">

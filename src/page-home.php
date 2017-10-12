@@ -22,7 +22,7 @@
               <div class="inner-container">
                 <div class="grid-middle">
                   <div class="col">
-                    <h2 class="slide-cta">&lrm;"<?php echo $cta ?>"&lrm;</h2>
+                    <h2 class="slide-cta">&lrm;<?php echo $cta ?>&lrm;</h2>
                     <p class="slide-subtext"><?php echo $subtext ?>&lrm;</p>
                   </div>
                 </div>
@@ -45,7 +45,7 @@
           </div>
         </div>
       </main>
-      <main id="what-we-do" class="site-main yellow-bg trigger">
+      <main id="what-we-do" class="site-main yellow-bg trigger full-height">
         <div class="inner-container">
           <div class="grid-middle">
             <div class="col-12">
@@ -126,10 +126,10 @@
       </div>
   </main>
   <main id="news" class="site-main">
-    <div class="inner-container full-height" style="max-width:100vw;">
-      <div class="grid-bottom full-height">
+    <div class="inner-container">
+      <div class="grid-bottom">
         <div class="col-12">
-          <h2 class="center">News</h2>
+          <h2 class="center" style="margin-bottom: 0;">News</h2>
         </div>
         <div class="col-12">
           <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
@@ -143,13 +143,13 @@
         <div class="col-12">
           <div class="spacer-line"></div>
           <h2 class="center">Your turn to make history</h2>
+          <p class="icon-descript center">Look beyond your limits, get in contact</p>
         </div>
 
         <div class="col-6_sm-12 form-cont" data-push-left="off-3_sm-0">
           <form action="https://service.capsulecrm.com/service/newlead" method="post" class="contact-form">
             <input type="hidden" name="FORM_ID" value="4b8af561-85cc-4cfe-bd4c-20c1d7345b77">
             <input type="hidden" name="COMPLETE_URL" value="<?php echo get_bloginfo('url') ?>/thanks">
-            <input type="hidden" name="TAG" value="Lead">
             <input type="hidden" name="TAG" value="BlackboxInc Lead">
             <input type="text" name="FIRST_NAME" placeholder="Your First Name">
             <input type="text" name="LAST_NAME" placeholder="Your Last Name">

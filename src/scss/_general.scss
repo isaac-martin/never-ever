@@ -72,8 +72,8 @@ img {
 
 .building-icon {
   height: 120px; width: auto;
-  margin: 0 auto;
-display: block;
+  margin: 0 auto 40px auto;
+  display: block;
 }
 
 .rocket-icon {
@@ -115,6 +115,11 @@ display: block;
 }
 
 
+#our-story {
+  @include media-below($break-small) {
+  padding-top: 0;
+}
+}
 
 
 .site-main {
@@ -122,7 +127,6 @@ display: block;
   @include media-below($break-medium) {
   padding-top: 60px;
   }
-
   .container {
     padding: 20px;
   }
@@ -173,6 +177,11 @@ label {
     @include media-below($break-small) {
       padding:0 0 0 20px;
     }
+
+    .single-location:first-of-type {
+      color: $black;
+    }
+
     .single-location {
       display: block;
       margin: 0 0 20px 0;
@@ -181,7 +190,10 @@ label {
       color: $white;
       padding: 0;
       @extend .brand-font-bold;
-      font-size: 4rem;
+      font-size: 3.2rem;
+    }
+    &:first-of-type {
+      color: $black;
     }
 }
 
@@ -190,7 +202,7 @@ label {
   width: 80%;
   height: 3px;
   background: $black;
-  margin: 160px auto;
+  margin: 20px auto 160px auto;
 }
 
 .border {
@@ -298,6 +310,7 @@ label {
   position: relative;
   bottom: -100px;
   opacity: 0;
+  padding-bottom: 80px;
 
   @include media-below($break-small) {
     bottom: 0;
@@ -323,4 +336,10 @@ label {
 .icon-text{
   font-size: 12px;
     text-align: center;
+}
+
+.home-btn {
+  text-transform: uppercase;
+  font-size: 3rem;
+  @extend .brand-font-bold;
 }

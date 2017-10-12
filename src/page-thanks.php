@@ -8,6 +8,7 @@
         <div class="col-12 border conf-msg center">
           <h3 class="conf-head"><img src="<?php bloginfo('template_directory'); ?>/imgs/icons/tick.svg" class="tick" />Thanks for contacting us!</h3>
           <p class="conf-sub">We’ll be in touch very soon.</p>
+          <a class="home-btn" href="<?php echo get_bloginfo('url') ?>">Back To Home</a>
         </div>
       </div>
     </div>

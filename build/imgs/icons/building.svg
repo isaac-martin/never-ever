@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.26 126.34"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-1{stroke-width:3.13px;}.cls-2{stroke-width:2.79px;}</style></defs><title>building</title><g id="Layer_2" data-name="Layer 2"><g id="artwork"><polygon class="cls-1" points="31.49 109.39 12.86 109.39 12.86 105.92 14.94 104.49 14.94 53.95 12.86 52.63 12.86 46.67 31.49 46.67 31.49 52.46 29.4 53.76 29.4 104.16 31.49 105.86 31.49 109.39"/><polygon class="cls-1" points="56.79 109.39 38.16 109.39 38.16 105.92 40.25 104.49 40.25 53.95 38.16 52.63 38.16 46.67 56.79 46.67 56.79 52.46 54.71 53.76 54.71 104.16 56.79 105.86 56.79 109.39"/><polygon class="cls-1" points="82.1 109.39 63.47 109.39 63.47 105.92 65.56 104.49 65.56 53.95 63.47 52.63 63.47 46.67 82.1 46.67 82.1 52.46 80.02 53.76 80.02 104.16 82.1 105.86 82.1 109.39"/><polygon class="cls-1" points="107.41 109.39 88.78 109.39 88.78 105.92 90.86 104.49 90.86 53.95 88.78 52.63 88.78 46.67 107.41 46.67 107.41 52.46 105.32 53.76 105.32 104.16 107.41 105.86 107.41 109.39"/><rect class="cls-2" x="55.38" y="63.24" width="9.51" height="113.91" transform="translate(180.32 60.06) rotate(90)"/><rect class="cls-1" x="56.32" y="-18.09" width="7.62" height="109.29" transform="translate(96.69 -23.58) rotate(90)"/><path class="cls-1" d="M60.13,1.56,2.92,28.18a2.34,2.34,0,0,0,1,4.46H116.36a2.34,2.34,0,0,0,1-4.46Z"/><circle class="cls-1" cx="60.13" cy="18.15" r="6.92"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120.3 133.5" style="enable-background:new 0 0 120.3 133.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:3.13;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#000000;stroke-width:2.79;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>building</title>
+<g id="Layer_2">
+	<g id="artwork">
+		<polygon class="st0" points="31.5,113.4 12.9,113.4 12.9,109.9 14.9,108.5 14.9,58 12.9,56.6 12.9,50.7 31.5,50.7 31.5,56.5 
+			29.4,57.8 29.4,108.2 31.5,109.9 		"/>
+		<polygon class="st0" points="56.8,113.4 38.2,113.4 38.2,109.9 40.2,108.5 40.2,58 38.2,56.6 38.2,50.7 56.8,50.7 56.8,56.5 
+			54.7,57.8 54.7,108.2 56.8,109.9 		"/>
+		<polygon class="st0" points="82.1,113.4 63.5,113.4 63.5,109.9 65.6,108.5 65.6,58 63.5,56.6 63.5,50.7 82.1,50.7 82.1,56.5 
+			80,57.8 80,108.2 82.1,109.9 		"/>
+		<polygon class="st0" points="107.4,113.4 88.8,113.4 88.8,109.9 90.9,108.5 90.9,58 88.8,56.6 88.8,50.7 107.4,50.7 107.4,56.5 
+			105.3,57.8 105.3,108.2 107.4,109.9 		"/>
+		<rect x="3.2" y="119.4" class="st1" width="113.9" height="9.5"/>
+		<rect x="5.5" y="36.7" class="st0" width="109.3" height="7.6"/>
+		<path class="st0" d="M60.1,5.6L2.9,32.2c-1.2,0.5-1.7,1.9-1.1,3.1c0.4,0.8,1.2,1.4,2.1,1.3h112.4c1.3,0,2.3-1,2.3-2.3
+			c0-0.9-0.5-1.7-1.3-2.1L60.1,5.6z"/>
+		<circle class="st0" cx="60.1" cy="22.1" r="6.9"/>
+	</g>
+</g>
+</svg>

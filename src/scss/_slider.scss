@@ -8,6 +8,10 @@
   width: 100%;
   margin-bottom: 30px;
 
+    @include media-below($break-small) {
+      margin-bottom: 0px;
+    }
+
   .top-slider {
     height: calc(100vh - 80px);
     width: 100vw;
@@ -49,6 +53,11 @@
   text-align: center;
   font-size: 2.4rem;
   line-height: 2.8rem;
+
+  @include media-below($break-small) {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
 }
 
 .slide-subtext {
@@ -104,4 +113,18 @@
 .colr-slide-text {
   font-size: .9rem;
 }
+}
+
+
+.ctf-carousel .ctf-carousel-more, .ctf-carousel .ctf-carousel-less {
+  background: white;
+}
+
+#ctf .fa {
+  color: $black;
+}
+
+
+.ctf-owl-prev, .ctf-owl-next {
+  background: none;
 }
